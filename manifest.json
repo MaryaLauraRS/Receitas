@@ -1,0 +1,21 @@
+{
+    "name": "Reitas",
+    "short_name": "hummmm",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "248x248",
+            "type": "image/png"
+        },
+        {
+            "src": "logo com fundo.jpg",
+            "sizes": "248x248",
+            "type": "image/jpg"
+        }
+    ],
+    "lang": "pt-BR",
+    "start_url": "/index",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white"
+}
