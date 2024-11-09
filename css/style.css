@@ -1,0 +1,289 @@
+.navbar {
+    display: flex;
+    align-items: center;        justify-content: space-between;
+    background-color: #fff;
+    border-bottom: solid 1px #93958e;
+}
+.logo {
+    margin-right: 15px;
+    padding-right: 10px;
+}
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.pesquisa input[type="text"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    width: 500px;
+    color: #333;
+    box-shadow: 0px 0px 10px #85322581;
+}
+
+.pesquisa button {
+    padding: 10px 20px;
+    background-color: #853225;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    
+}
+.pesquisa button:hover {
+    background-color: #331a13;
+}
+.a{
+    color: #333;
+    text-decoration: none;
+}
+
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #918c8c;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #d8b696;
+}
+
+.footer-apps {
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-apps h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.app-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-right: 50px;
+    color: #918c8c;
+}
+/* General styling for the container */
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+/* Styling each card */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 50px;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.author-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.author-image {
+    border-radius: 50%;
+}
+
+.author-info p {
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+
+.recipe-container {
+    width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-left: 28%;
+}
+
+h1 {
+    font-size: 24px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.rating span {
+    color: #333333;
+    font-weight: bold;
+}
+
+
+.content {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.video-section {
+    flex: 3;
+}
+
+.video-section p {
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+    margin-top: 5px;
+}
+
+.ad-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.actions button {
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.actions button:hover {
+    background-color: #eaeaea;
+}
+
+.recipe-detail-container {
+    width: 700px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.author-section2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.author-image2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-info2 p {
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.ingredients-section, .preparation-section {
+    margin-bottom: 20px;
+}
+
+.ingredients-section h2 {
+    font-size: 18px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.ingredient-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ingredient-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 45%;
+}
+
+.ad-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.preparation-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.preparation-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
