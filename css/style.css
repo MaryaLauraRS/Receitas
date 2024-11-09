@@ -1,19 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .navbar {
     display: flex;
-    align-items: center;        justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     background-color: #fff;
     border-bottom: solid 1px #93958e;
 }
+
 .logo {
     margin-right: 15px;
     padding-right: 10px;
 }
+
 .pesquisa {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
 }
+
 .pesquisa input[type="text"] {
     padding: 10px 15px;
     font-size: 16px;
@@ -32,12 +41,14 @@
     font-weight: bold;
     border: none;
     border-radius: 0 25px 25px 0;
-    
+
 }
+
 .pesquisa button:hover {
     background-color: #331a13;
 }
-.a{
+
+.a {
     color: #333;
     text-decoration: none;
 }
@@ -92,6 +103,7 @@
     margin-right: 50px;
     color: #918c8c;
 }
+
 /* General styling for the container */
 .container2 {
     display: flex;
@@ -145,12 +157,18 @@ h2 {
 
 
 .recipe-container {
-    width: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    padding-left: 28%;
+    align-self: center;
+    padding: 23px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    justify-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -224,8 +242,6 @@ h1 {
     width: 700px;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
 }
 
 .author-section2 {
@@ -247,7 +263,8 @@ h1 {
     color: #333;
 }
 
-.ingredients-section, .preparation-section {
+.ingredients-section,
+.preparation-section {
     margin-bottom: 20px;
 }
 
@@ -286,4 +303,24 @@ h1 {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
+}
+
+.botao-estilizado {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+    margin: inherit;
+    width: 5%;
+    text-decoration: none;
+}
+
+.botao-estilizado:hover {
+    background-color: #45a049;
 }
