@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: #f0f0f0;
 }
 
 .navbar {
@@ -8,7 +9,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    border-bottom: solid 1px #93958e;
+    border-bottom: solid 1px #93958ec5;
 }
 
 .logo {
@@ -55,7 +56,7 @@ body {
 
 
 .footer {
-    background-color: #f2f2f2;
+    background-color: #fff;
     padding: 40px 20px;
     display: flex;
     justify-content: space-around;
@@ -83,12 +84,15 @@ body {
 }
 
 .social-icons a:hover {
-    background-color: #d8b696;
+    background-color: #853225;
 }
 
 .footer-apps {
     font-size: 14px;
     color: #333;
+}
+.footer-apps a:hover{
+    color: #853225;
 }
 
 .footer-apps h3 {
@@ -104,21 +108,22 @@ body {
     color: #918c8c;
 }
 
-/* General styling for the container */
 .container2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     max-width: 1200px;
     justify-content: center;
+    align-self: center;
+    padding-bottom: 50px;
 }
 
-/* Styling each card */
 .card {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+    right: 350px;
     padding: 50px;
     text-align: center;
 }
@@ -153,9 +158,6 @@ h2 {
     margin: 0;
 }
 
-
-
-
 .recipe-container {
     display: flex;
     flex-direction: column;
@@ -173,7 +175,7 @@ h2 {
 
 h1 {
     font-size: 24px;
-    color: #e74c3c;
+    color: #853225;
     margin-bottom: 10px;
 }
 
@@ -184,10 +186,9 @@ h1 {
 }
 
 .rating span {
-    color: #333333;
+    color: #888888;
     font-weight: bold;
 }
-
 
 .content {
     display: flex;
@@ -197,13 +198,6 @@ h1 {
 
 .video-section {
     flex: 3;
-}
-
-.video-section p {
-    text-align: center;
-    font-size: 14px;
-    color: #555555;
-    margin-top: 5px;
 }
 
 .ad-section {
@@ -217,25 +211,6 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 8px;
-}
-
-.actions {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-
-.actions button {
-    background-color: #f4f4f4;
-    border: 1px solid #dddddd;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.actions button:hover {
-    background-color: #eaeaea;
 }
 
 .recipe-detail-container {
@@ -270,8 +245,12 @@ h1 {
 
 .ingredients-section h2 {
     font-size: 18px;
-    color: #e74c3c;
+    color: #853225;
     margin-bottom: 10px;
+}
+
+.preparation-section h2{
+    color: #853225;
 }
 
 .ingredient-list {
@@ -295,7 +274,6 @@ h1 {
 
 .preparation-list {
     list-style-type: none;
-    padding: 0;
 }
 
 .preparation-list li {
@@ -306,7 +284,7 @@ h1 {
 }
 
 .botao-estilizado {
-    background-color: #4CAF50;
+    background-color: #853225;
     border: none;
     color: white;
     padding: 15px 30px;
@@ -317,10 +295,43 @@ h1 {
     transition: all 0.3s ease;
     align-self: center;
     margin: inherit;
-    width: 5%;
+    width: auto;
     text-decoration: none;
 }
 
 .botao-estilizado:hover {
-    background-color: #45a049;
+    background-color: #331a13;
+}
+
+.carousel-container {
+    max-width: 900px;
+    overflow: hidden;
+    border-radius: 8px;
+    align-self: center;
+    padding: 50px;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    animation: slide 50s infinite;
+}
+
+.carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 400px;
+    display: block;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
 }
